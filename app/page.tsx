@@ -1,17 +1,11 @@
 // app/page.tsx
 import { auth, signOut } from "./Auth/Auth";
-import { SignIn } from "./Components/Login/Login";
+import { LoginLayout } from "./Components/Login/LoginLayout";
 
 export default async function Home() {
   const session = await auth();
 
-  if (!session)
-    return (
-      <div>
-        <p>로그인이 필요합니다.</p>
-        <SignIn />
-      </div>
-    );
+  if (!session) return <LoginLayout />;
 
   return (
     <div>
