@@ -1,4 +1,4 @@
-import { signIn } from "../../Auth/Auth";
+import { signIn } from "../Auth/Auth";
 import { LoginButton } from "./Components/LoginButton/LoginButton";
 
 export function LoginLayout() {

@@ -1,4 +1,4 @@
-import { signOut } from "../../Auth/Auth";
+import { signOut } from "../Auth/Auth";
 import { Session } from "next-auth";
 export function HomeLayout({ session }: { session: Session }) {
   return (
